@@ -12,3 +12,6 @@ install:
 
 brain-games:
 	poetry run brain-games
+
+reinstal:
+	pip install --user --force-reinstall dist/*.whl
