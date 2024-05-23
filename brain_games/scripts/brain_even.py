@@ -8,7 +8,7 @@ name = input()
 print("Hello, " + name)
 
 
-def brain_even():
+def main():
     answer_yes = 'yes'
     answer_no = 'no'
     i = 0
@@ -30,4 +30,4 @@ def brain_even():
     else: print(f"Congratulations, {name}!")
 
 if __name__ == "__main__":
-    brain_even()
+    main()
