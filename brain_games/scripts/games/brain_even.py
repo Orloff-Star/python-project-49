@@ -1,14 +1,13 @@
 import random
+from brain_games.scripts.functions import func
 
 
-name = ''
-print("Welcome to the Brain Games!")
-print('May I have your name? ', end='')
+func.greeting()
 name = input()
 print("Hello, " + name)
 
 
-def main():
+def even():
     answer_yes = 'yes'
     answer_no = 'no'
     i = 0
@@ -17,17 +16,22 @@ def main():
         print('Answer "yes" if the number is even, otherwise answer "no"')
         print(f"Question: {random_number}")
         answer_user = input('Your answer: ').lower()
-        if random_number % 2 == 0 and answer_user == answer_yes or random_number % 2 != 0 and answer_user == answer_no:
+        if random_number % 2 == 0 and answer_user == answer_yes \
+                or random_number % 2 != 0 and answer_user == answer_no:
             print('Correct!')
             i += 1
         else:
             if answer_user == answer_yes:
-                print(f"'{answer_user}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!")
+                print(f"""'{answer_user}'{func.incorrect_unswer} {answer_no}.
+                \nLet's try again, {name}!""")
                 break
             else:
-                print(f"'{answer_user}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!")
+                print(f"""'{answer_user}'{func.incorrect_unswer} {answer_yes}.
+                \nLet's try again, {name}!""")
                 break
-    else: print(f"Congratulations, {name}!")
+    else:
+        print(f"Congratulations, {name}!")
+
 
 if __name__ == "__main__":
-    main()
+    even()
