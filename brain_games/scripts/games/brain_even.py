@@ -22,12 +22,12 @@ def even():
             i += 1
         else:
             if answer_user == answer_yes:
-                print(f"""'{answer_user}'{func.incorrect_unswer} {answer_no}.
-                \nLet's try again, {name}!""")
+                print(f"'{answer_user}'{func.incorrect_unswer} {answer_no}.\
+                \nLet's try again, {name}!")
                 break
             else:
-                print(f"""'{answer_user}'{func.incorrect_unswer} {answer_yes}.
-                \nLet's try again, {name}!""")
+                print(f"'{answer_user}'{func.incorrect_unswer} {answer_yes}.\
+                \nLet's try again, {name}!")
                 break
     else:
         print(f"Congratulations, {name}!")

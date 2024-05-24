@@ -5,3 +5,4 @@
 
 Демонстрациионная запись: https://asciinema.org/a/ZniUTLYZvF6CC1hqOnZM3noJa
 Демо игра calc: https://asciinema.org/a/IzjcboKezIalceCS0yiogNaXj
+Демо игра gcd: https://asciinema.org/a/F8WpxBL9lnqh803deYjmVnsOv

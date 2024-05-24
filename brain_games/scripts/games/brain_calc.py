@@ -20,8 +20,8 @@ def calc():
             print('Correct!')
             i += 1
         else:
-            print(f"""'{answer_user}'{func.incorrect_unswer} {result}.
-            \nLet's try again, {name}!""")
+            print(f"'{answer_user}'{func.incorrect_unswer} {result}.\
+                \nLet's try again, {name}!")
             break
     else:
         print(f"Congratulations, {name}!")

@@ -14,7 +14,7 @@ incorrect_unswer = "is wrong answer ;(. Correct answer was"
 
 
 def random_number():
-    return random.randint(0, 100)
+    return random.randint(1, 100)
 
 
 if __name__ == "__main__":
