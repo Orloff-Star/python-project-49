@@ -7,4 +7,5 @@
 Демо игра calc: https://asciinema.org/a/IzjcboKezIalceCS0yiogNaXj
 Демо игра gcd: https://asciinema.org/a/F8WpxBL9lnqh803deYjmVnsOv
 Демо игра progression: https://asciinema.org/a/A4ZscDENsQWre426QnPAxsXC6
+Демо игра prime: https://asciinema.org/a/Gf8IUxLJIV5CqHH5zFcWvhMhK
 
