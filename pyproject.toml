@@ -2,11 +2,12 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = ""
-authors = ["Eagle"]
+authors = ["Eagle <sys-leek@mail.ru>"]
 readme = "README.md"
 packages = [
   { include = "brain_games" },
 ]
+repository = "https://github.com/Orloff-Star/python-project-49.git"
 
 [tool.poetry.dependencies]
 python = "^3.10"
