@@ -29,7 +29,7 @@ def gcd():
     number_two = random.randint(1, 100)
     list_div = max_divisor(number_one, number_two)
     correct_answer = max(list_div)
-    question = f'{number_one}  {number_two}'
+    question = f'{number_one} {number_two}'
     return question, correct_answer, specification
 
 
