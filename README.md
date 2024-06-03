@@ -1,20 +1,47 @@
 ### Hexlet tests and linter status:
+
+BRAIN-GAMES
+
 [![Actions Status](https://github.com/Orloff-Star/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Orloff-Star/python-project-49/actions)
 
 <a href="https://codeclimate.com/github/Orloff-Star/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/56a76894d97cdb44720e/maintainability" /></a>
 
-Проект - это набот математических игр написанных на языку Python. Габор включает в себя пять игр.
-Каждая игра запускается отдельной командой.
+The project is a set of mathematical games written in Python. The set includes five games.
+Each game is launched by a separate command.
 
-Установка программы: https://asciinema.org/a/ZniUTLYZvF6CC1hqOnZM3noJa
+Instructions
+Test your knowledge in mathematics! Choose any of five games and reach the final!
 
-Демо игра venv: https://asciinema.org/a/CmeK4ES8vi820PY4QB2IumUXO
+Вescription:
+Brain-even - Guess whether the number is even or not.
+Brain-calc - Solve a simple math example
+Brain-gcd - Find the greatest common divisor of two numbers
+Brain-progression - Guess which number is natural and which is not.
+Brain-prime - Fill in the missing number in the sequence
 
-Демо игра calc: https://asciinema.org/a/IzjcboKezIalceCS0yiogNaXj
+Installation:
+clone the repository and install manually:
 
-Демо игра gcd: https://asciinema.org/a/F8WpxBL9lnqh803deYjmVnsOv
+$ git clone https://github.com/Orloff-Star/python-project-49.git
+$ python3 -m pip install --user dist/*.whl
+$ poetry install
 
-Демо игра progression: https://asciinema.org/a/A4ZscDENsQWre426QnPAxsXC6
+Start Game
+To start the game, simply enter the desired command with the required game from the description:
+$ Brain-even
+or
+$ Brain-gcd
+and follow the instructions.
 
-Демо игра prime: https://asciinema.org/a/Gf8IUxLJIV5CqHH5zFcWvhMhK
+Install program: https://asciinema.org/a/ZniUTLYZvF6CC1hqOnZM3noJa
+
+Demo game venv: https://asciinema.org/a/CmeK4ES8vi820PY4QB2IumUXO
+
+Demo game calc: https://asciinema.org/a/IzjcboKezIalceCS0yiogNaXj
+
+Demo game gcd: https://asciinema.org/a/F8WpxBL9lnqh803deYjmVnsOv
+
+Demo game progression: https://asciinema.org/a/A4ZscDENsQWre426QnPAxsXC6
+
+Demo game prime: https://asciinema.org/a/Gf8IUxLJIV5CqHH5zFcWvhMhK
 

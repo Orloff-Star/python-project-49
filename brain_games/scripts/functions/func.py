@@ -1,32 +1,28 @@
-import random
+import prompt
 
 
-def greeting():
-    print("Welcome to the Brain Games!")
-    print('May I have your name? ', end='')
+attempt = 3
 
 
-if __name__ == "__main__":
-    greeting()
+def get_question_and_answer(game):
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+    print(game()[2])
+    i = 0
+    while i < attempt:
 
+        question, correct_answer = game()[0:2]
+        print(f'Question: {question}')
+        answer = prompt.string('Your answer: ').lower()
 
-incorrect_unswer = "is wrong answer ;(. Correct answer was"
+        if answer == str(correct_answer):
+            print('Correct!')
+        else:
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'.")
+            print(f'Let\'s try again, {name}!')
+            return
+        i = i + 1
 
-
-def random_number():
-    return random.randint(1, 100)
-
-
-if __name__ == "__main__":
-    random_number()
-
-
-operators = ['+', '-', '*']
-
-
-def choose_operator():
-    return random.choice(operators)
-
-
-if __name__ == "__main__":
-    choose_operator()
+    print(f'Congratulations, {name}!')

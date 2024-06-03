@@ -1,9 +1,5 @@
+import random
 from brain_games.scripts.functions import func
-
-
-func.greeting()
-name = input()
-print("Hello, " + name)
 
 
 def max_divisor(number_one, number_two):
@@ -28,25 +24,18 @@ def max_divisor(number_one, number_two):
 
 
 def gcd():
-    j = 1
-    while j <= 3:
-        num_one = func.random_number()
-        num_two = func.random_number()
-        list_div = max_divisor(num_one, num_two)
-        max_div = max(list_div)
-        print('Find the greatest common divisor of given numbers.')
-        print(f"Question: {num_one}  {num_two}")
-        answer_user = input('Your answer: ')
-        if answer_user == str(max_div):
-            print('Correct!')
-            j += 1
-        else:
-            print(f"'{answer_user}'{func.incorrect_unswer} {max_div}.\
-                \nLet's try again, {name}!")
-            break
-    else:
-        print(f"Congratulations, {name}!")
+    specification = 'Find the greatest common divisor of given numbers.'
+    number_one = random.randint(1, 100)
+    number_two = random.randint(1, 100)
+    list_div = max_divisor(number_one, number_two)
+    correct_answer = max(list_div)
+    question = f'{number_one}  {number_two}'
+    return question, correct_answer, specification
 
 
-if __name__ == "__main__":
-    gcd()
+def main():
+    func.get_question_and_answer(gcd)
+
+
+if __name__ == '__main__':
+    main()

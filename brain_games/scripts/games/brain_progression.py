@@ -2,11 +2,6 @@ import random
 from brain_games.scripts.functions import func
 
 
-func.greeting()
-name = input()
-print("Hello, " + name)
-
-
 def list_progression():
     random_index = random.randint(0, 200)
     random_step = random.randint(1, 10)
@@ -20,26 +15,19 @@ def list_progression():
 
 
 def progression():
-    j = 1
-    while j <= 3:
-        list_progres = list_progression()
-        hidden_num = random.randint(0, len(list_progres) - 1)
-        search_element = list_progres[hidden_num]
-        simbol = '..'
-        list_progres[hidden_num] = simbol
-        print('What number is missing in the progression?')
-        print(f"Question: {list_progres}")
-        answer_user = input('Your answer: ')
-        if answer_user == str(search_element):
-            print('Correct!')
-            j += 1
-        else:
-            print(f"'{answer_user}'{func.incorrect_unswer} {search_element}.\
-                \nLet's try again, {name}!")
-            break
-    else:
-        print(f"Congratulations, {name}!")
+    specification = 'What number is missing in the progression?'
+    list_progres = list_progression()
+    hidden_num = random.randint(0, len(list_progres) - 1)
+    correct_answer = list_progres[hidden_num]
+    simbol = '..'
+    list_progres[hidden_num] = simbol
+    question = f'{list_progres}'
+    return question, correct_answer, specification
 
 
-if __name__ == "__main__":
-    progression()
+def main():
+    func.get_question_and_answer(progression)
+
+
+if __name__ == '__main__':
+    main()
