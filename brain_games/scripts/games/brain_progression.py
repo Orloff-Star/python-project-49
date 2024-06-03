@@ -19,9 +19,13 @@ def progression():
     list_progres = list_progression()
     hidden_num = random.randint(0, len(list_progres) - 1)
     correct_answer = list_progres[hidden_num]
-    simbol = '..'
+    simbol = ".."
     list_progres[hidden_num] = simbol
-    question = f'{list_progres}'
+    string = ''
+    for el in list_progres:
+        string += str(el)
+        string += ' '
+    question = f'{string}'
     return question, correct_answer, specification
 
 
