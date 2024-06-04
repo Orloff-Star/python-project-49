@@ -12,7 +12,7 @@ def prime_num(num):
 
 
 def prime():
-    specification = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    specific = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     random_number = random.randrange(0, 300)
     ans_wer = prime_num(random_number)
     if ans_wer is True:
@@ -20,7 +20,7 @@ def prime():
     else:
         correct_answer = 'no'
     question = f'{random_number}'
-    return question, correct_answer, specification
+    return question, correct_answer, specific
 
 
 def main():
