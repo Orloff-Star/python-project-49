@@ -1,8 +1,10 @@
 import random
-from brain_games.scripts.functions import func
 
 
-def list_progression():
+SPECIFICATION = 'What number is missing in the progression?'
+
+
+def is_list_progression():
     random_index = random.randint(0, 200)
     random_step = random.randint(1, 10)
     random_length = random.randint(7, 10)
@@ -14,9 +16,8 @@ def list_progression():
     return result_list
 
 
-def progression():
-    specification = 'What number is missing in the progression?'
-    list_progres = list_progression()
+def user_interaction():
+    list_progres = is_list_progression()
     hidden_num = random.randint(0, len(list_progres) - 1)
     correct_answer = list_progres[hidden_num]
     simbol = ".."
@@ -26,12 +27,4 @@ def progression():
         string += str(el)
         string += ' '
     question = f'{string}'
-    return question, correct_answer, specification
-
-
-def main():
-    func.get_question_and_answer(progression)
-
-
-if __name__ == '__main__':
-    main()
+    return question, correct_answer
