@@ -4,8 +4,7 @@ import random
 SPECIFICATION = 'What is the result of the expression?'
 
 
-def user_interaction():
-    
+def user_interaction():    
     number_one = random.randint(1, 100)
     number_two = random.randint(1, 100)
     operators = ['+', '-', '*']

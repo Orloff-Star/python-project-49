@@ -1,1 +1,0 @@
-specification = 'What is the result of the expression?'
