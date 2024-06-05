@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 
-#BRAIN-GAMES
+BRAIN-GAMES
 
 [![Actions Status](https://github.com/Orloff-Star/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Orloff-Star/python-project-49/actions)
 
@@ -9,7 +9,7 @@
 The project is a set of mathematical games written in Python. The set includes five games.
 Each game is launched by a separate command.
 
-###Instructions
+Instructions
 
 Test your knowledge in mathematics! Choose any of five games and reach the final!
 
@@ -25,7 +25,7 @@ Brain-progression - Guess which number is natural and which is not.
 
 Brain-prime - Fill in the missing number in the sequence
 
-###Installation:
+Installation:
 
 clone the repository and install manually:
 
@@ -35,7 +35,7 @@ $ python3 -m pip install --user dist/*.whl
 
 $ poetry install
 
-###Start Game
+Start Game
 
 To start the game, simply enter the desired command with the required game from the description:
 
