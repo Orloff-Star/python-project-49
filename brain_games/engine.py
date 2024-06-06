@@ -4,14 +4,14 @@ import prompt
 ATTEMPT = 3
 
 
-def get_question_and_answer(game):
+def run_game(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     print(game.SPECIFICATION)
     i = 0
     while i < ATTEMPT:
-        question, correct_answer = game.user_interaction()
+        question, correct_answer = game.calculate_answer()
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ').lower()
 
