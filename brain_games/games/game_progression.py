@@ -24,7 +24,7 @@ def get_progression():
     return result_list
 
 
-def calculate_answer():
+def ask_question_get_answer():
     progression = get_progression()
     hidden_num = random.randint(0, len(progression) - 1)
     correct_answer = progression[hidden_num]

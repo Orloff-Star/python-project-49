@@ -6,7 +6,7 @@ START_OF_RANGE = 1
 END_OF_RANGE = 100
 
 
-def calculate_answer():
+def ask_question_get_answer():
     random_number = random.randrange(START_OF_RANGE, END_OF_RANGE)
     if random_number % 2 == 0:
         correct_answer = 'yes'

@@ -15,7 +15,7 @@ def is_prime_num(num):
     return True
 
 
-def calculate_answer():
+def ask_question_get_answer():
     random_number = random.randrange(START_OF_RANGE, END_OF_RANGE)
     answer = is_prime_num(random_number)
     if answer is True:
