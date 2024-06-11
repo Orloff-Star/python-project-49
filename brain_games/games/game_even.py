@@ -6,11 +6,11 @@ START_OF_RANGE = 1
 END_OF_RANGE = 100
 
 
-def ask_question_get_answer():
+def generate_question_answer():
     random_number = random.randrange(START_OF_RANGE, END_OF_RANGE)
     if random_number % 2 == 0:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
     question = f'{random_number}'
-    return question, correct_answer
+    return question, str(correct_answer)

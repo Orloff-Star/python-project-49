@@ -10,10 +10,10 @@ def run_game(game):
     print(f'Hello, {name}!')
     print(game.SPECIFICATION)
     for _ in range(ATTEMPTS_COUNT):
-        question, correct_answer = game.ask_question_get_answer()
+        question, correct_answer = game.generate_question_answer()
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ').lower()
-        if answer == str(correct_answer):
+        if answer == correct_answer:
             print('Correct!')
         else:
             print(f"'{answer}' is wrong answer ;(. "

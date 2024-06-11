@@ -6,7 +6,7 @@ START_OF_RANGE = 1
 END_OF_RANGE = 100
 
 
-def ask_question_get_answer():
+def generate_question_answer():
     number_one = random.randint(START_OF_RANGE, END_OF_RANGE)
     number_two = random.randint(START_OF_RANGE, END_OF_RANGE)
     operators = ['+', '-', '*']
@@ -18,4 +18,4 @@ def ask_question_get_answer():
         correct_answer = number_one - number_two
     elif operator == '*':
         correct_answer = number_one * number_two
-    return question, correct_answer
+    return question, str(correct_answer)
