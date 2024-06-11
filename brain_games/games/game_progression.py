@@ -29,5 +29,5 @@ def generate_question_answer():
     correct_answer = progression[hidden_num]
     empty_symbol = ".."
     progression[hidden_num] = empty_symbol
-    question = f'{progression}'
+    question = ' '.join(map(str, progression))
     return question, str(correct_answer)
